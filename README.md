@@ -25,8 +25,8 @@ This API allows users to play charades, get random charades, add new charades, a
 classDiagram
     class Charade {
         - TypeCharade type
-        - Difficulty difficulty
-        - Tag[] tag
+        - String difficulty
+        - String[] tag
         - String description
         - String answer
         +String[] getType()
@@ -45,19 +45,8 @@ classDiagram
 
     class ShortAnswer extends TypeCharade {
     }
-    class Difficulty {
-        - String[] level
-        +void setLevel()
-        +String getLevel()
-    }
-    class Tag {
-        - String[] name
-        +void setName()
-        +String getName()
-    }
-    
 
+    
     Charade "1" *-- "N*" TypeCharade
-    Charade "1" *-- "N*" Difficulty
-    Charade "N" *-- "N*" Tag
+
 ```
