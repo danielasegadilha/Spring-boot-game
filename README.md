@@ -29,6 +29,11 @@ classDiagram
         - String[] tag
         - String description
         - String answer
++String[] getType()
+        +String[] getDifficulty()
+        +String[] getTag()
+        +String getDescription()
+        +String getAnswer()
     }
     class TypeCharade {
         - String[] multipleChoice
