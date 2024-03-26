@@ -24,7 +24,6 @@ This API allows users to play charades, get random charades, add new charades, a
 ```mermaid
 classDiagram
     class Charade {
-        - TypeCharade type
         - String difficulty
         - String[] tag
         - String description
@@ -35,18 +34,13 @@ classDiagram
         +String getDescription()
         +String getAnswer()
     }
-    class TypeCharade {
-    }
-    class MultipleChoice extends TypeCharade {
+    class MultipleChoice extends Charade {
         -String[] option
         +String[] setOption()
         +String[] getOption()
     }
 
-    class ShortAnswer extends TypeCharade {
+    class ShortAnswer extends Charade {
     }
-
-    
-    Charade "1" *-- "N*" TypeCharade
 
 ```
