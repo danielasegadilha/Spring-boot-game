@@ -1,26 +1,20 @@
 package com.charigma.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
-import jakarta.persistence.Id;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.*;
 
 
 @Entity
 @Table(name = "charades")
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Charade {
+public abstract class Charade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(length = 150)
+    @Column(nullable = false, length = 150)
     private String question;
-    @Column(length = 20)
+    @Column(nullable = false, length = 20)
     private String answer;
+    @Column(nullable = false)
     private String difficulty;
     private String origin;
 
