@@ -1,8 +1,17 @@
 package com.charigma.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
+import jakarta.persistence.Id;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.GeneratedValue;
 
-@Entity(name = "charades")
+
+@Entity
+@Table(name = "charades")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Charade {
     @Id
@@ -16,13 +25,9 @@ public abstract class Charade {
     private String origin;
 
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() {return id;}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) {this.id = id;}
 
     public String getQuestion() {return question;}
 
