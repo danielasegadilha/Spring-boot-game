@@ -13,7 +13,7 @@ import jakarta.persistence.GeneratedValue;
 @Entity
 @Table(name = "charades")
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Charade {
+public class Charade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
