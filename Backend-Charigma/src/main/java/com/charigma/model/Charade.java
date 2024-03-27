@@ -17,7 +17,8 @@ public abstract class Charade {
     @Column(nullable = false)
     private String difficulty;
     private String origin;
-
+    @Transient
+    private String clue;
 
     public Long getId() {return id;}
 
@@ -38,4 +39,9 @@ public abstract class Charade {
     public String getOrigin() {return origin;}
 
     public void setOrigin(String origin) {this.origin = origin;}
+
+    public String getClue() {return clue;}
+
+    public void setClue(String clue) {this.clue = clue;}
+
 }
