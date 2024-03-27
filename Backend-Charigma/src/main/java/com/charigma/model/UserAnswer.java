@@ -2,7 +2,6 @@ package com.charigma.model;
 
 import jakarta.persistence.Transient;
 
-@Transient
 public class UserAnswer {
 
     private String answer;

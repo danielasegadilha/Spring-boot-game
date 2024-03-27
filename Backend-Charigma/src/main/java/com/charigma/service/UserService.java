@@ -4,7 +4,8 @@ import com.charigma.model.Charade;
 import com.charigma.model.UserAnswer;
 
 public interface UserService {
-    UserAnswer sendAnswer();
+    UserAnswer verifyAnswer();
     void restartGame();
     String getResult();
+    String getClue();
 }

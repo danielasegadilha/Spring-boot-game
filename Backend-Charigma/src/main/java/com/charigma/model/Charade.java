@@ -2,31 +2,40 @@ package com.charigma.model;
 
 import jakarta.persistence.*;
 
-
 @Entity
 @Table(name = "charades")
 @Inheritance(strategy = InheritanceType.JOINED)
+@PrimaryKeyJoinColumn(name = "charadeId")
 public abstract class Charade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "CharadeType", nullable = false)
+    protected final String type;
     @Column(nullable = false, length = 150)
-    private String question;
+    private String description;
     @Column(nullable = false, length = 20)
     private String answer;
-    @Column(nullable = false)
+    @Column( nullable = false)
     private String difficulty;
     private String origin;
     @Transient
     private String clue;
 
+    public Charade(String type) {
+        this.type = type;
+    }
     public Long getId() {return id;}
 
     public void setId(Long id) {this.id = id;}
 
-    public String getQuestion() {return question;}
+    public String getDescription() {
+        return description;
+    }
 
-    public void setQuestion(String question) {this.question = question;}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getAnswer() {return answer;}
 
