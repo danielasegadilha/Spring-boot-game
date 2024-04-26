@@ -1,4 +1,4 @@
-package com.charigma;
+package com.charades;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba326eb2-4b56-45fe-9ef0-5e3954ea53d2" name="Changes" comment="Create tag class">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/.intellij/setting.json" beforeDir="false" afterPath="$PROJECT_DIR$/.intellij/setting.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/java/com/charigma/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/charigma/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/java/com/charigma/enums/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/charigma/enums/Difficulty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/java/com/charigma/model/Charade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/charigma/model/Charade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/java/com/charigma/model/MultipleChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/charigma/model/MultipleChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/java/com/charigma/model/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/charigma/model/Option.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/java/com/charigma/model/ShortAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/charigma/model/ShortAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/java/com/charigma/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/charigma/model/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-Charigma/src/test/java/com/charigma/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/charigma/ApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba326eb2-4b56-45fe-9ef0-5e3954ea53d2" name="Changes" comment="Fix charade API directory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +31,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="90e63246-d761-40b6-9ba2-f36ccf29140a" />
-        <option name="url" value="https://github.com/danielasegadilha/Spring-boot-game.git" />
+        <option name="url" value="https://github.com/danielasegadilha/charade-API-RESTful.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -108,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714150132287</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix charade API directory">
+      <option name="closed" value="true" />
+      <created>1714151150257</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714151150257</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create enum" />
     <MESSAGE value="Create tag class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create tag class" />
+    <MESSAGE value="Fix charade API directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix charade API directory" />
   </component>
 </project>

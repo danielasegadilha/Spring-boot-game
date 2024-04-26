@@ -1,6 +1,6 @@
-package com.charigma.model;
+package com.charades.model;
 
-import com.charigma.enums.Difficulty;
+import com.charades.enums.Difficulty;
 import jakarta.persistence.*;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.charigma.model;
+package com.charades.model;
 
 import jakarta.persistence.*;
 
