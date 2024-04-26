@@ -1,4 +1,4 @@
-package com.charigma;
+package com.charade;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
