@@ -1,6 +1,9 @@
 package com.charigma.model;
 
+import com.charigma.enums.Difficulty;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "charade")
@@ -9,13 +12,29 @@ import jakarta.persistence.*;
 public abstract class Charade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "charade_id")
     private Long id;
 
+    @Column(nullable = false, length = 200, unique = true)
     private String question;
 
-    private String difficulty;
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Difficulty difficulty;
 
     private String origin;
+
+    @ManyToMany
+    @JoinTable(
+            name = "charade_tag",
+            joinColumns = @JoinColumn(name = "charade_id"),
+            inverseJoinColumns = @JoinColumn(name = "tags")
+    )
+    private List<Tag> tags;
+
+    public void setDifficulty(Difficulty difficulty) { this.difficulty = difficulty; }
+
+    public Difficulty getDifficulty() { return difficulty;}
 
     public String getQuestion() {
         return question;
@@ -23,14 +42,6 @@ public abstract class Charade {
 
     public void setQuestion(String question) {
         this.question = question;
-    }
-
-    public String getDifficulty() {
-        return difficulty;
-    }
-
-    public void setDifficulty(String difficulty) {
-        this.difficulty = difficulty;
     }
 
     public String getOrigin() {
@@ -41,5 +52,4 @@ public abstract class Charade {
         this.origin = origin;
     }
 
-    // Getters and setters
 }

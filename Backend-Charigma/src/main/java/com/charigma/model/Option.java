@@ -13,7 +13,10 @@ public class Option {
     @JoinColumn(name = "charade_id")
     private MultipleChoice charade;
 
+    @Column(name = "option_text", nullable = false, length = 100)
     private String optionText;
+
+    @Column(name = "is_correct", nullable = false)
     private boolean isCorrect;
 
     public String getOptionText() {

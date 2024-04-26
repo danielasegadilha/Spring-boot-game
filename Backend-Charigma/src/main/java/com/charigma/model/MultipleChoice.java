@@ -10,6 +10,7 @@ public class MultipleChoice extends Charade {
     @OneToMany(mappedBy = "charade", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Option> options;
 
+    @Column(nullable = false)
     public List<Option> getOptions() {
         return options;
     }
