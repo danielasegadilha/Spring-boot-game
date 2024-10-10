@@ -63,3 +63,55 @@ classDiagram
         +setName(String name)
         +getName()
     }
+```
+
+
+## 📋 API Endpoints
+
+Here is a table summarizing the available API endpoints and their functionality:
+
+| HTTP Method | Endpoint                        | Description                                 |
+|-------------|---------------------------------|---------------------------------------------|
+| **GET**     | `/charades`                     | Retrieves all charades                      |
+| **GET**     | `/charades/{id}`                | Retrieves a specific charade by ID          |
+| **GET**     | `/charades/tags/{tagName}`      | Retrieves charades filtered by tag          |
+| **GET**     | `/charades/difficulty/{level}`  | Retrieves charades filtered by difficulty   |
+| **GET**     | `/tags`                         | Retrieves all tags available in the database|
+
+
+And these endpoints are only available for authorized users:
+
+| HTTP Method | Endpoint                        | Description                                 |
+|-------------|---------------------------------|---------------------------------------------|
+| **POST**    | `/charades`                     | Creates a new charade                       |
+| **POST**    | `/tags`                         | Creates a new tag                           |
+| **PUT**     | `/charades/{id}`                | Updates an existing charade by ID           |
+| **DELETE**  | `/charades/{id}`                | Deletes a specific charade by ID            |
+
+## 📦 Installation
+
+### Requirements
+
+Before you begin, ensure you have met the following requirements:
+- ✔️ **Java 17** installed
+- ✔️ **Maven** installed
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/charade-API-RESTful.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd charade-API-RESTful
+
+3. Build the project using Maven:
+   ```bash
+   mvn clean install
+   ```
+
+4. Run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
